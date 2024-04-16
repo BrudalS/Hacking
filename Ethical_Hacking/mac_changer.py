@@ -18,3 +18,4 @@ print("[+] Changing MAC address for " + interface + " to " + mac_new)
 subprocess.call(["ifconfig", interface, "down"])
 subprocess.call(["ifconfig", interface, "hw", "ether", mac_new])
 subprocess.call(["ifconfig", interface, "up"])
+# test change
